@@ -2,5 +2,5 @@ import streamlit as st
 
 st.title("Roi777⚡")
 st.write(        
-    "Say No To Drugs and Gambling 🚫."
+    "Say No To Drugs and Gamble 🚫."
 )
