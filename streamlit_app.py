@@ -46,8 +46,6 @@ if st.button("Main Lagi yu"):
     st.rerun()
     
 import random
-st.set_page_config(page_title="Stickman Fight", page_icon="🥷")
-
 st.title("🥷 Stickman Fight")
 
 # Inisialisasi state
