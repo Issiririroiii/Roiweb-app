@@ -10,6 +10,6 @@ st.header("Tulis tanggal lahir Lu")
 angka = st.number_input("Tulis sebuah Angka:", value=0, step=1)
 
 if (angka % 2) == 0:
- st.write(f"{angka} Kurang Hoki dalam Asmara, Bad boy, redflag,")
+ st.write(f"{angka} Kurang Hoki dalam asmara, Bad boy/Bad Girl, redflag, bjir")
 else:
  st.write(f"{angka} Damn Hoki banget biasanya banyak yang suka, orangnya ganteng, cool, keren, kaya yg difoto 👆🏻")
