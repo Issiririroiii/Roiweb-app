@@ -24,3 +24,4 @@ st.markdown(
         """,
         unsafe_allow_html=True
 )
+backgroundColor = "#f0f0f0"
