@@ -16,6 +16,7 @@ else:
 
 st.title("AYO MAIN SUIT JAWA ✊🏻✋🏻✌🏻")
 
+import random
 pilihan = ["Batu", "Kertas", "Gunting"]
 emoji = {
     "Batu": "✊",
