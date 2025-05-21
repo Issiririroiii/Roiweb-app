@@ -14,3 +14,14 @@ if (angka % 2) == 0:
 else:
  st.write(f"{angka} Damn Hoki banget biasanya banyak yang suka, orangnya ganteng, cool, keren, kaya yg difoto 👆🏻")
 bgcolor("black")
+
+st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background-color: #f0f0f0; /* Ubah warna latar belakang di sini */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+)
