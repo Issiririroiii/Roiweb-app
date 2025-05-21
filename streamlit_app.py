@@ -38,9 +38,9 @@ if st.button("Main!"):
     elif (player_choice == "Batu" and computer_choice == "Gunting") or \
          (player_choice == "Kertas" and computer_choice == "Batu") or \
          (player_choice == "Gunting" and computer_choice == "Kertas"):
-        st.success("Hasil: Kamu menang, lawan bot aja bangga!")
+        st.success("Hasil: Kamu menang, selamat!")
     else:
-        st.error("Hasil: si Bot menang nih masa kalah sama bot!")
+        st.error("Hasil: Maaf kamu Kalah, masa kalah sama bot!")
 
 if st.button("Main Lagi yu"):
     st.rerun()
