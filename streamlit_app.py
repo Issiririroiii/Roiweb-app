@@ -43,5 +43,5 @@ if st.button("Main!"):
         st.error("Hasil: si Bot menang nih masa kalah sama bot!")
 
 if st.button("Main Lagi yu"):
-    st.experimental_rerun()
+    st.rerun()
     
