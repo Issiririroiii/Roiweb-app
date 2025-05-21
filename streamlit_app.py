@@ -5,11 +5,11 @@ st.write(
     "Bukan Web Judol"
 )
 st.image("IMG-20250519-WA0016.jpg", width=2000)
-st.title("Roi pintar berhitung")
-st.header("Tulis angka lu")
+st.title("Roi pintar meramal")
+st.header("Tulis tanggal lahir lu")
 angka = st.number_input("Tulis sebuah Angka:", value=0, step=1)
 
 if (angka % 2) == 0:
- st.write(f"{angka} adalah Bilangan Genap")
+ st.write(f"{angka} Kurang Hoki dalam Asmara")
 else:
- st.write(f"{angka} adalah Bilangan Ganjil")
+ st.write(f"{angka} Damn Hoki banget biasanya banyak yang suka, orangnya ganteng, cool, keren, kaya yg difoto 👆🏻")
