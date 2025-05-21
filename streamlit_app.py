@@ -38,10 +38,78 @@ if st.button("Main!"):
     elif (player_choice == "Batu" and computer_choice == "Gunting") or \
          (player_choice == "Kertas" and computer_choice == "Batu") or \
          (player_choice == "Gunting" and computer_choice == "Kertas"):
-        st.success("Hasil: Kamu menang, selamat!")
+        st.success("Hasil: Kamu menang, selamat🎉!")
     else:
         st.error("Hasil: Maaf kamu Kalah, masa kalah sama bot!")
 
 if st.button("Main Lagi yu"):
     st.rerun()
+    
+import random
+st.set_page_config(page_title="Stickman Fight", page_icon="🥷")
+
+st.title("🥷 Stickman Fight")
+
+# Inisialisasi state
+if "player_hp" not in st.session_state:
+    st.session_state.player_hp = 100
+    st.session_state.enemy_hp = 100
+    st.session_state.log = []
+    st.session_state.round = 1
+
+# Fungsi log
+def add_log(text):
+    st.session_state.log.insert(0, text)
+
+# UI & aksi
+st.markdown(f"**Ronde {st.session_state.round}**")
+st.progress(st.session_state.player_hp, text="HP Kamu")
+st.progress(st.session_state.enemy_hp, text="HP Musuh")
+
+col1, col2, col3 = st.columns(3)
+with col1:
+    if st.button("⚔️ Serang"):
+        damage = random.randint(10, 20)
+        st.session_state.enemy_hp -= damage
+        add_log(f"Kamu menyerang musuh dan memberi {damage} damage!")
+with col2:
+    if st.button("🛡️ Bertahan"):
+        heal = random.randint(5, 10)
+        st.session_state.player_hp += heal
+        if st.session_state.player_hp > 100:
+            st.session_state.player_hp = 100
+        add_log(f"Kamu bertahan dan memulihkan {heal} HP!")
+with col3:
+    if st.button("🔥 Serangan Khusus"):
+        damage = random.randint(15, 30)
+        recoil = random.randint(5, 10)
+        st.session_state.enemy_hp -= damage
+        st.session_state.player_hp -= recoil
+        add_log(f"Kamu menyerang dengan kekuatan besar ({damage} damage), tapi kehilangan {recoil} HP!")
+
+# Musuh menyerang setiap aksi
+if st.session_state.enemy_hp > 0 and st.session_state.player_hp > 0:
+    enemy_attack = random.randint(5, 15)
+    st.session_state.player_hp -= enemy_attack
+    add_log(f"Musuh menyerang dan memberi {enemy_attack} damage!")
+
+st.session_state.round += 1
+
+# Game over
+if st.session_state.player_hp <= 0:
+    st.error("Kamu kalah! Game over.")
+elif st.session_state.enemy_hp <= 0:
+    st.success("Kamu menang! Stickman musuh tumbang.")
+
+if st.button("🔁 Mulai Ulang"):
+    st.session_state.player_hp = 100
+    st.session_state.enemy_hp = 100
+    st.session_state.log = []
+    st.session_state.round = 1
+    st.rerun()
+
+# Log Pertarungan
+st.markdown("### Log Pertarungan")
+for entry in st.session_state.log[:10]:
+    st.markdown(f"- {entry}")
     
