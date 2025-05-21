@@ -95,9 +95,9 @@ st.session_state.round += 1
 
 # Game over
 if st.session_state.player_hp <= 0:
-    st.error("Kamu kalah! Game over.")
+    st.error("Innalillahi Kamu mati! Game over.")
 elif st.session_state.enemy_hp <= 0:
-    st.success("Kamu menang! Stickman musuh tumbang.")
+    st.success("Alhamdulillah Kamu menang! Stickman musuh tumbang.")
 
 if st.button("🔁 Mulai Ulang"):
     st.session_state.player_hp = 100
