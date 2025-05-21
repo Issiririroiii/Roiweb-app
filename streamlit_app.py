@@ -14,7 +14,7 @@ if (angka % 2) == 0:
 else:
  st.write(f"{angka} Damn Hoki banget biasanya banyak yang suka, orangnya ganteng, cool, keren, kaya yg difoto 👆🏻")
 
-st.title("✊ Batu - ✋ Kertas- ✌️ Gunting")
+st.title("AYO MAIN SUIT JAWA ✊🏻✋🏻✌🏻")
 
 pilihan = ["Batu", "Kertas", "Gunting"]
 emoji = {
