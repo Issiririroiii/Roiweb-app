@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("Roi777")
-#st.write(        
+st.write(        
     "Bukan Web Judol"
 )
 #st.image("IMG-20250519-WA0016.jpg", width=2000)
