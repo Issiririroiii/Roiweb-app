@@ -13,3 +13,4 @@ if (angka % 2) == 0:
  st.write(f"{angka} Kurang Hoki dalam asmara, Bad boy/Bad Girl, redflag, bjir")
 else:
  st.write(f"{angka} Damn Hoki banget biasanya banyak yang suka, orangnya ganteng, cool, keren, kaya yg difoto 👆🏻")
+bgcolor("black")
