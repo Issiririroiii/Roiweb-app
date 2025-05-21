@@ -6,7 +6,7 @@ st.write(
 )
 st.image("IMG-20250519-WA0016.jpg", width=2000)
 st.title("Roi pintar meramal")
-st.header("Tulis tanggal lahir lu")
+st.header("Tulis tanggal lahir Lu")
 angka = st.number_input("Tulis sebuah Angka:", value=0, step=1)
 
 if (angka % 2) == 0:
