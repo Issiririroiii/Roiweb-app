@@ -4,7 +4,7 @@ st.title("Roi777")
 st.write(        
     "Bukan Web Judol"
 )
-#st.image("IMG-20250519-WA0016.jpg", width=2000)
+st.image("IMG-20250519-WA0016.jpg", width=2000)
 st.title("Roi pintar berhitung")
 st.header("nantang? sini cobain kalo ga percaya")
 angka = st.number_input("Tulis sebuah Angka:", value=0, step=1)
