@@ -4,8 +4,8 @@ st.title("Roi777")
 st.write(        
     "Web ini dibuat untuk Tugas dan candaan saja"
 )
-st.image("IMG-20250519-WA0016.jpg", width=700)
-st.title("Roi pintar meramal")
+st.image("IMG_20250428_130541.jpg", width=700)
+st.title("orang di atas pintar meramal")
 st.header("Tulis tanggal lahir Kamu")
 angka = st.number_input("Tulis sebuah Angka:", value=0, step=1)
 
