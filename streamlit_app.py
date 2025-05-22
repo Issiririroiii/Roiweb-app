@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Roi777")
 st.write(        
-    "Web ini dibuat untuk Tugas dan candaan saja"
+    "Web ini dibuat untuk Tugas dan Hiburan saja"
 )
 st.image("IMG_20250428_130541.jpg", width=700)
 st.title("orang di atas pintar meramal")
