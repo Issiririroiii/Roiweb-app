@@ -40,7 +40,7 @@ if st.button("Main!"):
          (player_choice == "Gunting" and computer_choice == "Kertas"):
         st.success("Hasil: Kamu menang, selamat🎉!")
     else:
-        st.error("Hasil: Maaf kamu Kalah, masa kalah sama bot!")
+        st.error("Hasil: Maaf kamu Kalah!")
 
 if st.button("Main Lagi yu"):
     st.rerun()
