@@ -44,7 +44,8 @@ if st.button("Main!"):
 
 if st.button("Main Lagi yu"):
     st.rerun()
-
+else:
+    pass
 st.title("Aplikasi Sederhana")
 
 # Menggunakan layout kolom
